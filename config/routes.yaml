@@ -1,0 +1,19 @@
+#home:
+#    path: /
+#    controller: App\Controller\SecurityController::security_login
+
+#connexion:
+#    path: /connexion
+#    controller: App\Controller\ConnexionController::connexion
+
+#inscription:
+#    path: /inscription
+#    controller: App\Controller\ConnexionController::inscription
+
+#ajoutFicheFrais:
+#    path: /ajoutFicheFrais
+#    controller: App\Controller\FicheFraisController::ajoutFicheFrais
+
+#allFicheFrais:
+#    path: /AllFicheFrais/2
+#    controller: App\Controller\FicheFraisController::allFicheFrais

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestion des fiches de Frais{% endblock %}
+
+{% block body %}
+
+
+<table class="table table-striped">
+  {% for uneFiche in lesFiches %}
+      <tr>
+        <td>{{uneFiche.libelle}}</td>
+        <td>{{uneFiche.datedebut|date('d/m/Y')}}</td>
+        <td>{{uneFiche.idEtre.libelle}}</td>
+        {% if ("now"|date('m/Y') == uneFiche.datedebut|date('m/Y')) %}
+          <td><a href="{{ path('uneFicheModif',{'id':uneFiche.id} ) }}" class="btn btn-info">Modifier</a></td>
+        {% else %}
+          <td><a href="{{ path('uneFiche',{'id':uneFiche.id} ) }}" class="btn btn-success">Consulter</a></td>
+        {% endif %}
+        {#{% if (test) %}
+          <a href="{{ path('uneFiche',{'id':uneFiche.id} ) }}" class="btn btn-warning">Consulter</a>
+        {% endif %}#}
+      </tr>
+  {% endfor %}
+
+  {% endblock %}
