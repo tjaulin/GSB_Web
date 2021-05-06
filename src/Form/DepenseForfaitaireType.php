@@ -22,4 +22,3 @@ class DepenseForfaitaireType extends AbstractType
         ]);
     }
 }
-

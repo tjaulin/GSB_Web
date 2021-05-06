@@ -23,4 +23,3 @@ class FicheFraisType extends AbstractType
         ]);
     }
 }
-
