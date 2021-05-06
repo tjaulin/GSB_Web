@@ -1,0 +1,125 @@
+<?php //%255BApp%255CEntity%255CVisiteursmedicaux%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Visiteursmedicaux',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Visiteursmedicaux',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'ID',
+                        'id' => true,
+                    ],
+                    'nom' => [
+                        'fieldName' => 'nom',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'fixed' => true,
+                        ],
+                        'columnName' => 'NOM',
+                    ],
+                    'prenom' => [
+                        'fieldName' => 'prenom',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'fixed' => true,
+                        ],
+                        'columnName' => 'PRENOM',
+                    ],
+                    'login' => [
+                        'fieldName' => 'login',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'fixed' => true,
+                        ],
+                        'columnName' => 'LOGIN',
+                    ],
+                    'mdp' => [
+                        'fieldName' => 'mdp',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 32,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'options' => [
+                            'fixed' => true,
+                        ],
+                        'columnName' => 'MDP',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'ID' => 'id',
+                    'NOM' => 'nom',
+                    'PRENOM' => 'prenom',
+                    'LOGIN' => 'login',
+                    'MDP' => 'mdp',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'ID',
+                    'nom' => 'NOM',
+                    'prenom' => 'PRENOM',
+                    'login' => 'LOGIN',
+                    'mdp' => 'MDP',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'VISITEURSMEDICAUX',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
